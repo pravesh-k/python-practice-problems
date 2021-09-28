@@ -5,7 +5,7 @@
 #  print "UNO" otherwise print "NOT UNO"
 
 #  Example Input: 51112
-#  Output: UNO (because 5+1+1+1+2=10 then, 1+0=1)
+#  Output: UNO (because 5+1+1+1+2 = 10 then adding the digits of the sum, 1+0 = 1)
 
 n = int(input())
 

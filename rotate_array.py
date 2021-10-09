@@ -1,3 +1,13 @@
+## This problem is from LeetCode numbered #189. Rotate an array
+
+# Problem Statement: Given an array, rotate the array to the 
+# right by k steps, where k is non-negative.
+
+# Costraints:
+# 1 <= nums.length <= 105
+# -231 <= nums[i] <= 231 - 1
+# 0 <= k <= 105
+
 from typing import List
 
 class Solution:

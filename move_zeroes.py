@@ -14,9 +14,17 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        for i in range(len(nums)):
+        i, j = 0, 0
+        count_zeroes = nums.count(0)
+
+        # iterate over the list and till not all zeroes are moved
+        while i < len(nums) and j < count_zeroes:
             if nums[i] == 0:                    # pop the element if it is 0 and 
                 nums.append(nums.pop(i))        # append at last position in array
+                j += 1                          # count the number of zeroes moved
+            else:
+                i += 1
+        
         return nums
 
 
@@ -24,7 +32,7 @@ class Solution:
 def main():
 
     sol = Solution()
-    nums = [0,0,1]
+    nums = [0]
 
     print(sol.moveZeroes(nums))
 

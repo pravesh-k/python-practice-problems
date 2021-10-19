@@ -22,16 +22,17 @@ class Solution:
 
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
                     
-        count = listLen(head)
-        newNode = head
-        pos = 0
+        count = listLen(head)       # find the length of linked list
         
-        if count == 1:
+        if count == 1:              # when only 1 node is present
             return None
         
-        if n == count:
+        if n == count:              # when n == list's length, remove first node from list
             return head.next
 
+        newNode = head              # temp variable to iterate through nodes
+        pos = 0
+        
         while pos < count - n -1:
             newNode = newNode.next
             pos += 1

@@ -36,7 +36,7 @@ class Solution:
                                                                 # use the variable from parent function
 
             # when not to change the colour of the pixel
-            if i<0 or i>row-1 or j<0 or j>col-1 or image[i][j]!=old_color:
+            if i<0 or i>row-1 or j<0 or j>col-1 or image[i][j]!=old_color or image[i][j] == newColor:
                 return
 
             # when conditions satisfied for changing the color, perform color change
@@ -60,10 +60,10 @@ class Solution:
 def main():
 
     sol = Solution()
-    image = [[1,1,1],[1,1,0],[1,0,1]]
+    image = [[0,0,0],[0,1,1]]
     sr = 1
     sc = 1
-    newColor = 2
+    newColor = 1
 
     print(sol.floodFill(image, sr, sc, newColor))
 

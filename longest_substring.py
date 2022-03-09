@@ -34,7 +34,7 @@ class Solution:
 def main():
 
     sol = Solution()
-    s = "au"
+    s = "Python is a high-level general-purpose programming language."
 
     print(sol.lengthOfLongestSubstring(s))
 

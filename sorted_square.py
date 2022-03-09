@@ -13,13 +13,7 @@ from typing import List
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
         
-        # # iteraying through each element. squaring it and 
-        # # replacing with array's original element
-        # for i in range(len(nums)):
-            # nums[i] *= nums[i]
-
-        # list comprehension format for above for loop
-        nums = [nums[i]*nums[i] for i in range(len(nums))]
+        nums = [i*i for i in nums]
   
         return sorted(nums)
 

@@ -32,7 +32,7 @@ class Solution:
 def main():
 
     sol = Solution()
-    nums = [0]
+    nums = [1, 0, 8, 6, 0, 9, 1, 8, 0, 7]
 
     print(sol.moveZeroes(nums))
 
